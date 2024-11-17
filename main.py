@@ -8,10 +8,6 @@ body_new_pokemon = {
     "photo_id": -1
 }
 
-body_add_pokeball = {
-    "pokemon_id": "1111"
-}
-
 response = requests.post(url = f'{URL}/pokemons' , headers = HEADER , json = body_new_pokemon)
 print(response.text)
 
